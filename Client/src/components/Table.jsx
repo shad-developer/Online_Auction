@@ -155,7 +155,7 @@ export const Table = ({
                 <td className="px-6 py-4">{product?.title.slice(0, 10)}...</td>
                 <td className="px-6 py-4">{product?.category.slice(0, 10)}</td>
                 <td className="px-6 py-4">{product?.commission} %</td>
-                <td className="px-6 py-4">{product?.price} $</td>
+                <td className="px-6 py-4">Rs. {product?.price} </td>
 
                 {!isAdmin && (
                   <>

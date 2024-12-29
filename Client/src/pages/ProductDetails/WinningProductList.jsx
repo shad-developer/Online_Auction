@@ -67,7 +67,7 @@ export const WinningProductList = () => {
         
                     <td className="px-6 py-4">{new Date(winned?.createdAt).toLocaleString()} </td> 
                     <td className="px-6 py-4 font-bold">{winned?.title.substring(0,20)}</td>
-                    <td className="px-6 py-4 font-bold">{winned?.price} $ </td>
+                    <td className="px-6 py-4 font-bold">Rs. {winned?.price}  </td>
                     <td className="px-6 py-4 text-center flex items-end justify-center mt-4">
                       <NavLink to={`/details/${winned?.product?._id}`} className=" font-medium text-indigo-500">
                         <TiEyeOutline size={25} />

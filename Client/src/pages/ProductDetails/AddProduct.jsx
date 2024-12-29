@@ -124,32 +124,35 @@ export const AddProduct = () => {
             <div className="w-1/2">
               <Caption className="mb-2">Price Range*</Caption>
               <input
-                type="decimal"
+                type="number"
                 min={1}
                 name="price"
                 value={product.price}
                 onChange={handleInputChange}
                 className={`${commonClassNameOfInput}`}
-                placeholder="Price in USD"
+                placeholder="Price in PKR"
                 required
               />
             </div>
+
             <div className="w-1/2">
-              <Caption className="mb-2">Image </Caption>
+              <Caption className="mb-2">Weight </Caption>
               <input
-                type="file"
-                onChange={handleImageChange}
+                type="number"
+                name="weight"
+                value={weight}
+                onChange={handleInputChange}
                 className={`${commonClassNameOfInput}`}
-                name="image"
+                placeholder="Weight in Grams"
               />
             </div>
           </div>
           <div className="flex items-center gap-5 mt-4 mb-5">
             {/* Length Input */}
             <div className="w-1/2">
-              <Caption className="mb-2">Length *</Caption>
+              <Caption className="mb-2">Length </Caption>
               <input
-                type="text"
+                type="number"
                 name="length"
                 value={length}
                 onChange={handleInputChange}
@@ -159,9 +162,9 @@ export const AddProduct = () => {
             </div>
             {/* Width Input */}
             <div className="w-1/2">
-              <Caption className="mb-2">Width *</Caption>
+              <Caption className="mb-2">Width </Caption>
               <input
-                type="text"
+                type="number"
                 name="width"
                 value={width}
                 onChange={handleInputChange}
@@ -172,9 +175,9 @@ export const AddProduct = () => {
 
             {/* Height Input */}
             <div className="w-1/2">
-              <Caption className="mb-2">Height *</Caption>
+              <Caption className="mb-2">Height </Caption>
               <input
-                type="text"
+                type="number"
                 name="height"
                 value={height}
                 onChange={handleInputChange}
@@ -186,21 +189,11 @@ export const AddProduct = () => {
 
           <div className="flex items-center gap-5 mt-4 mb-5">
             {/* Weight Input */}
-            <div className="w-1/2">
-              <Caption className="mb-2">Weight *</Caption>
-              <input
-                type="text"
-                name="weight"
-                value={weight}
-                onChange={handleInputChange}
-                className={`${commonClassNameOfInput}`}
-                placeholder="Weight in Grams"
-              />
-            </div>
+          
 
             {/* Color Input */}
             <div className="w-1/2">
-              <Caption className="mb-2">Color *</Caption>
+              <Caption className="mb-2">Color </Caption>
               <input
                 type="text"
                 name="color"
@@ -213,7 +206,7 @@ export const AddProduct = () => {
 
             {/* Material Input */}
             <div className="w-1/2">
-              <Caption className="mb-2">Material *</Caption>
+              <Caption className="mb-2">Material </Caption>
               <input
                 type="text"
                 name="material"
@@ -221,6 +214,15 @@ export const AddProduct = () => {
                 onChange={handleInputChange}
                 className={`${commonClassNameOfInput}`}
                 placeholder="Material"
+              />
+            </div>
+            <div className="w-1/2">
+              <Caption className="mb-2">Image </Caption>
+              <input
+                type="file"
+                onChange={handleImageChange}
+                className={`${commonClassNameOfInput}`}
+                name="image"
               />
             </div>
           </div>

@@ -123,9 +123,9 @@ export const ProductEdit = () => {
         {/* Product Details Fields */}
         <div className="flex items-center gap-5 mt-4">
           <div className="w-1/3">
-            <Caption className="mb-2">Height *</Caption>
+            <Caption className="mb-2">Height </Caption>
             <input
-              type="text"
+              type="number"
               name="height"
               className={commonClassNameOfInput}
               placeholder="Height"
@@ -135,9 +135,9 @@ export const ProductEdit = () => {
             />
           </div>
           <div className="w-1/3">
-            <Caption className="mb-2">Length *</Caption>
+            <Caption className="mb-2">Length </Caption>
             <input
-              type="text"
+              type="number"
               name="length"
               className={commonClassNameOfInput}
               placeholder="Length"
@@ -147,9 +147,9 @@ export const ProductEdit = () => {
             />
           </div>
           <div className="w-1/3">
-            <Caption className="mb-2">Width *</Caption>
+            <Caption className="mb-2">Width </Caption>
             <input
-              type="text"
+              type="number"
               name="width"
               className={commonClassNameOfInput}
               placeholder="Width"
@@ -159,9 +159,9 @@ export const ProductEdit = () => {
             />
           </div>
           <div className="w-1/3">
-            <Caption className="mb-2">Weight *</Caption>
+            <Caption className="mb-2">Weight </Caption>
             <input
-              type="text"
+              type="number"
               name="weight"
               className={commonClassNameOfInput}
               placeholder="Weight"
@@ -187,7 +187,7 @@ export const ProductEdit = () => {
             />
           </div>
           <div className="w-1/3">
-            <Caption className="mb-2">Material *</Caption>
+            <Caption className="mb-2">Material </Caption>
             <input
               type="text"
               name="material"
@@ -199,7 +199,7 @@ export const ProductEdit = () => {
             />
           </div>
           <div className="w-1/3">
-            <Caption className="mb-2">Color *</Caption>
+            <Caption className="mb-2">Color </Caption>
             <input
               type="text"
               name="color"
@@ -228,7 +228,7 @@ export const ProductEdit = () => {
 
         {/* Image Field */}
         <div className="mt-20">
-          <Caption className="mb-2">Image</Caption>
+          <Caption className="mb-2">Image *</Caption>
           <input
             type="file"
             className={commonClassNameOfInput}

@@ -50,13 +50,13 @@ export const UpdateProductByAdmin = () => {
     <>
       <section className="bg-white shadow-s1 p-8 rounded-xl">
         <Title level={5} className=" font-normal mb-5">
-          Update Product
+          Verify Product
         </Title>
         <hr className="my-5" />
         <div className="create-product">
           <form onSubmit={handleSubmit}>
             <div className="w-full">
-              <Caption className="mb-2">Commission %</Caption>
+              <Caption className="mb-2">Add Commission %</Caption>
               <input
                 type="number"
                 name="commission"
@@ -65,9 +65,10 @@ export const UpdateProductByAdmin = () => {
                 onChange={handleChange}
                 className={`${commonClassNameOfInput}`}
               />
+              <p className=" mt-5 text-gray-400 text-sm">Note: Add Commission to verify the product for auction listing</p>
             </div>
             <PrimaryButton type="submit" className="rounded-none my-5">
-              {isLoading? "Updating" :"Update"}
+              {isLoading? "Verifying" :"Verify"}
             </PrimaryButton>
           </form>
         </div>

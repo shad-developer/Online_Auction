@@ -8,7 +8,7 @@ import { MdOutlineFavorite } from "react-icons/md";
 import { fetchBiddingHistory } from "../../redux/features/biddingSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const ProductCard = ({ item, highestBid }) => {
+const ProductCard = ({ item, highestBid, totalBids }) => {
   const navigate = useNavigate();
 
   const handlePlaceBid = () => {
@@ -49,7 +49,7 @@ const ProductCard = ({ item, highestBid }) => {
                 </Caption>
               )}
               <Caption className="text-green bg-green_100 px-3 py-1 text-sm rounded-full">
-                {item?.totalBids} Bids
+                {totalBids} Bids
               </Caption>
             </div>
           </div>
@@ -64,7 +64,7 @@ const ProductCard = ({ item, highestBid }) => {
               </div>
               <div>
                 <Caption className="text-green">Current Bid</Caption>
-                <Title>${highestBid}</Title>
+                <Title>Rs: {highestBid}</Title>
               </div>
             </div>
             <div className="w-[1px] h-10 bg-gray-300"> </div>
@@ -74,7 +74,7 @@ const ProductCard = ({ item, highestBid }) => {
               </div>
               <div>
                 <Caption className="text-red-500">Price</Caption>
-                <Title>${item?.price}</Title>
+                <Title>Rs: {item?.price}</Title>
               </div>
             </div>
           </div>

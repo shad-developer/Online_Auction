@@ -84,7 +84,7 @@ export const PlaceBiddingList = () => {
         
                     <td className="px-6 py-4">{new Date(bid?.createdAt).toLocaleString()} </td> 
                     <td className="px-6 py-4 font-bold">{bid?.product?.title.substring(0,20)}</td>
-                    <td className="px-6 py-4 font-bold">{bid?.price} $ </td>
+                    <td className="px-6 py-4 font-bold">Rs: {bid?.price}  </td>
                     <td className="px-6 py-4 text-center flex items-center justify-end gap-3 mt-4">
                       <NavLink to={`/details/${bid?.product?._id}`} type="button" className="font-medium text-indigo-500">
                         <TiEyeOutline size={25} />

@@ -26,7 +26,7 @@ const AuctionHistory = ({ history }) => {
                     Bid Placed At
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Bid Amount(USD)
+                    Bid Amount(PKR)
                   </th>
                  
                 </tr>
@@ -41,7 +41,7 @@ const AuctionHistory = ({ history }) => {
                     <td className="px-6 py-4">
                       {new Date(item?.createdAt).toLocaleString()}
                     </td>
-                    <td className="px-6 py-4">{item?.price} $</td>
+                    <td className="px-6 py-4">Rs: {item?.price}</td>
                     
                   </tr>
                 ))}

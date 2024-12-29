@@ -169,11 +169,11 @@ const ProductDetails = () => {
                 </div>
               </div>
               <Title level={5} className="flex items-center gap-2 my-5">
-                Price: <Caption className="text-lg">${product?.price} </Caption>
+                Price: <Caption className="text-lg">Rs: {product?.price} </Caption>
               </Title>
               <Title level={5} className="flex items-center gap-2 mt-5">
                 Current bid:
-                <Caption className="text-lg">${rate} </Caption>
+                <Caption className="text-lg">Rs: {rate} </Caption>
               </Title>
               <div className="p-5 px-10 shadow-s3 py-8 mt-5">
                 <form
@@ -288,7 +288,7 @@ const ProductDetails = () => {
                       </div>
                       <div className="flex justify-between py-3 border-b">
                         <Title>Price</Title>
-                        <Caption> ${product?.price} </Caption>
+                        <Caption> Rs: {product?.price} </Caption>
                       </div>
                       <div className="flex justify-between py-3 border-b">
                         <Title>Sold out</Title>

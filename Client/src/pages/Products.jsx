@@ -10,7 +10,7 @@ export const Products = ({ products }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const ProductsPerPage = 4;
 
-  const { highestBid } = useBiddingHistory();
+  const { highestBid, totalBids } = useBiddingHistory();
 
   // pagination start here
   const handlePageClick = (selectedPage) => {
@@ -75,7 +75,7 @@ export const Products = ({ products }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-8">
           {currentProducts?.map((item) => (
-            <ProductCard item={item} key={item._id} highestBid={highestBid(item._id)} />
+            <ProductCard item={item} key={item._id} highestBid={highestBid(item._id)} totalBids={totalBids(item._id)} />
           ))}
         </div>
 

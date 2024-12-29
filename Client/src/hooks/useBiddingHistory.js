@@ -25,9 +25,17 @@ const useBiddingHistory = () => {
     return Math.max(...bids.map((bid) => bid.price));
   };
 
+ // Get total number of bids for a product
+  const totalBids = (productId) => {
+    const bids = groupedHistories[productId];
+    return bids ? bids.length : 0;
+  };
+
+
   return {
     groupedHistories,
     highestBid,
+    totalBids
   };
 };
 

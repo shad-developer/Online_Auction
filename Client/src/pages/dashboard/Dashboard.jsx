@@ -86,7 +86,7 @@ export const Dashboard = () => {
               <div className="shadow-s3 border border-green bg-green_100 p-8 flex items-center text-center justify-center gap-5 flex-col rounded-xl">
                 <BsCashCoin size={80} className="text-green" />
                 <div>
-                  <Title level={1}>$ {userIncome?.balance?.toFixed(2)}</Title>
+                  <Title level={1}>PKR {userIncome?.balance?.toFixed(2)}</Title>
                   <Title>Personal Balance</Title>
 
                 </div>
@@ -123,12 +123,12 @@ export const Dashboard = () => {
                 <div>
                   {role === "admin" ? (
                     <>
-                      <Title level={1}>$ {adminIncome?.commissionBalance?.toFixed(2)}</Title>
+                      <Title level={1}>PKR {adminIncome?.commissionBalance?.toFixed(2)}</Title>
                       <Title> Commission Balance</Title>
                     </>
                   ) : (
                     <>
-                      <Title level={1}>$ {userIncome?.balance?.toFixed(2)}</Title>
+                      <Title level={1}>PKR {userIncome?.balance?.toFixed(2)}</Title>
                       <Title>Balance</Title>
                     </>
                   )}
